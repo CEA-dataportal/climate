@@ -2849,11 +2849,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-bg: #f5333f;
+  --bs-btn-border-color: #f5333f;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-bg: #12284c;
+  --bs-btn-hover-border-color: #12284c;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #50817e;
@@ -11069,7 +11069,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/p-BGD7401-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

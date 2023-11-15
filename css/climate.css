@@ -1,0 +1,17 @@
+img.site-logo {
+    width: 180px;
+    height: 81px;
+}
+#mainNav.navbar-shrink {
+    color: #f5333f;
+    border-color:#f5333f !important;
+}
+#mainNav.navbar-shrink .nav-link.active {
+    color: #f5333f;
+    border-color:#f5333f !important;
+}
+#mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
