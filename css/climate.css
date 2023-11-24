@@ -1,17 +1,532 @@
+body {
+  font-weight: 300;
+}
+
+
 img.site-logo {
     width: 180px;
     height: 81px;
+    position: fixed;
+    top:20px;
+    left:50px;
 }
+#mainNav {background: transparent!important;}
 #mainNav.navbar-shrink {
-    color: #f5333f;
     border-color:#f5333f !important;
 }
 #mainNav.navbar-shrink .nav-link.active {
-    color: #f5333f;
+    
     border-color:#f5333f !important;
 }
 #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.9);
+    background:#f5333f;
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 20px;
+    max-width: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: none;
+    text-align: center;
 }
+
+.hightlight {
+    background:#FFF!important;
+}
+
+.nav-link li {
+    max-width: 20px!important;
+}
+
+a {
+ text-decoration: none;
+}
+
+.masthead {
+padding-top: 50px!important;
+}
+
+.page1 {
+    background: linear-gradient(to bottom, rgba(63, 58, 58, 0.6) 0%, rgba(63, 58, 58, 1) 85%, rgb(63, 58, 58) 100%), url("../assets/img/buenos-aires.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: scroll;    
+  }
+
+  
+.bangladesh {
+    background: linear-gradient(to left, rgba(63, 58, 58, 0.9) 0%, rgb(63, 58, 58, 1) 85%), url("../assets/img/Satkhira/situation-cyclone-satkira.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+  }
+
+
+
+.argentina {
+    background: linear-gradient(to left, rgba(63, 58, 58, 0.9) 0%, rgb(63, 58, 58, 1) 85%), url("../assets/img/buenos-aires.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+  }
+
+
+  .container-country {
+    position:fixed;
+    z-index: 20;
+}
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .container-country {
+    margin-left: 30%;
+    width: 70%;
+    max-width: 800px;
+}
+}
+@media (min-width: 1400px) {
+  .container-country {
+    margin-left: 20vw;
+    width: 65%;
+    max-width: 1280px;
+}
+}
+
+@media (min-width: 992px) {
+  .carousel-inner {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+  }
+  }
+
+@media (min-width: 1400px) {
+.carousel-inner {
+  position:relative;
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-indicators {
+  position: relative;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+}
+
+
+
+
+#chart {
+height: 30%;
+position: relative;
+padding-top:0em;
+bottom:0;
+margin-left: auto;
+margin-right: auto;
+
+  }
+  
+.bottom-line {
+  right:-10px;
+    bottom:-2em;
+    max-width: 20%;
+    min-width: 15%;
+    position: fixed;
+    z-index: 1030;
+  }
+.keymessages {
+  line-height: 1em;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.icons { 
+    bottom:20px;
+    left:0;
+    width: 50%;
+    height: 10%;
+    position: fixed;
+    z-index: 1025;
+  }
+
+.map { 
+    top:0;
+    left:0;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+
+  @media (max-width: 992px) {
+    .map { display: none;
+    }
+    .container-country {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+  }
+  
+.indexheader {
+    height: 25vh;
+  }
+.indexmap {
+  height: 25vh;
+}
+  
+
+.worldmap { 
+    position: relative;
+    left:-10%;
+    z-index: 1020;
+    --heightmap: 100%;
+  }
+
+  .map-world {
+    opacity: 0.2;
+    
+    max-height: 100%;
+  }
+
+
+
+ .icon {
+    height: 55px;
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+ #circle_container-argentina {
+    width: 3%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    position: relative;
+    left:32%;
+    top:-16%;
+  }
+
+#circle_container-bangladesh {
+    width: 3%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    position: relative;
+    left:73%;
+    top:-60%;
+  }
+
+.map-bangladesh {
+    height: 100%;
+    opacity: 0.3;
+    --height: 100%;
+  }
+
+#circle_container-tangail {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:64%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.21);
+  }
+
+  #circle_container-satkhira {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:40%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.13);
+  }
+
+
+  #circle_container {
+    width: 3%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    position: relative;
+    bottom:58%;
+    left:15%;
+  }
+
+  .circle, .circle a{
+    border-radius: 50%;
+    background-color: #d50909;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.26, .11, .19, .12);
+  }
+
+  .play {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:#FFF;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    line-height: 22px;
+    padding-left:5px;
+    animation: bounce 2s infinite linear;
+  }
+
+  
+  .play a:hover{
+    color:#FFF;
+  }
+
+  .btn-play {
+    font-size: 3rem;
+  }
+
+  .btn-close {
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    padding-top:-10px;
+    line-height: normal;
+    position: absolute;
+    font-size: 1.5em;
+    background: none;
+    color: #212529;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+
+@keyframes scaleIn {
+    from {
+      transform: scale(.5, .5);
+      opacity: .5;
+    }
+    to {
+      transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
+
+  @keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-15px);} 
+    60% {transform: translateY(-15px);} 
+ }
+  .item {
+    z-index: 1021;
+  }
+
+  .item img {
+    width: 10px;
+  }
+
+
+
+.card {
+    min-width: 250px;
+    min-height: 200px;
+    max-width: 450px;
+    max-height: 350px;
+    /*transform-style: preserve-3d;*/
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.16);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    /*border-right: 1px solid #999;
+    border-bottom: 1px solid #999;*/
+    padding: 1em;
+    transform-style: preserve-3d;
+    align-items: center;
+}
+
+.card .face {
+    /*position: absolute;*/
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    /*transition: 0.5s;
+    backface-visibility:visible;*/
+
+}
+
+
+.card .profile {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    top:20px;
+    left:20px;
+}
+
+.card .name {
+    letter-spacing: 2px;
+}
+
+.card .designation {
+    font-size: 1rem;
+    color: #ddd;
+    letter-spacing: 0.8px;
+}
+
+.card .testimonial {
+  font-size: 0.9rem;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.card .fa-quote-left {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size:  0.9rem;
+}
+
+.card .fa-quote-right {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* charts */
+
+
+/* Stories Popup */
+
+.bs-example{
+  margin: 20px;
+}
+.modal-dialog iframe{
+    margin: auto;
+    
+  display: block;
+}
+/* The Modal (background) */
+.modal {
+  --bs-modal-width: none;
+  --bs-modal-padding: none;
+  --bs-modal-border-width: 0px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: transparent;
+  border: none;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 60vw;
+  max-width: 850px;
+  background:transparent;
+  color: #212529;
+  margin: auto; /* 15% from the top and centered */
+}
+.modal-header {
+  border: none;
+} 
+.modal .video {
+  border: 1px #FFF solid;
+} 
+.modal .popup-tangail {
+  padding:20px;
+  position: fixed;
+  top:32%;
+  left:8%;
+  overflow:hidden !important;
+  overflow-y:auto;
+  width: 400px;
+  max-height: 50vh !important; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  color: #212529;
+}
+
+
+.modal .popup-satkhira {
+  padding:20px;
+  position: fixed;
+  top:60%;
+  left:2%;
+  overflow:hidden !important;
+  overflow-y:auto;
+  width: 400px;
+  max-height: 50vh !important; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  color: #212529;
+}
+.close {margin-top:-30px;margin-right:-30px;font-weight: 700;float: right; padding: 5px; width: 45px; text-align: center; color:#FFF!important;} 
+.close:hover{color:#CCC!important;} 
+
