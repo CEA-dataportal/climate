@@ -52,3 +52,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// tooltip
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })

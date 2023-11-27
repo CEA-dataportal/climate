@@ -51,19 +51,20 @@
         </div>
         </nav>
         <!-- Masthead-->
+
+        
         <header class="masthead">
             <div class="container px-4 index w-75">
-              
-                    <div class="row text-center indexheader">
-                      <h1 class="mx-auto text-uppercase">Our Climate Crisis</h1>
-                      <h2 class="text-white-50 mx-auto text-uppercase mb-5">Humanitarian Impact of Climate Change</h2>
-                      <!-- <p class="text-white-50 w-75 mx-auto ">
-                        In October and November 2023, the IFRC Community Engagement and Accountability and Climate teams in Geneva conducted two qualitative studies to offer authoritative evidence and community insights on the humanitarian impacts of the climate crisis in National Societies with high and middle vulnerability levels, namely Argentina and Bangladesh.
-                      </p> -->
-                      <a href="#myModal" class="btn-play play" data-toggle="modal"><i class="bi bi-play-circle-fill"></i></a>
-    
-                      
-                    </div>
+                <div class="row indexheader">
+                <h1 class="mx-auto text-uppercase">Our Climate Crisis</h1>
+                <h2 class="text-white-50 mx-auto text-uppercase mb-5">Community Insights on the humanitarian impacts of the climate crisis</h2>
+                <!-- <p class="text-white-50 w-75 mx-auto ">
+                  In October and November 2023, the IFRC Community Engagement and Accountability and Climate teams in Geneva conducted two qualitative studies to offer authoritative evidence and community insights on the humanitarian impacts of the climate crisis in National Societies with high and middle vulnerability levels, namely Argentina and Bangladesh.
+                </p> -->
+              </div>
+                    
+                
+                    
                     <div class="row text-center indexmap">   
                       <div class="worldmap">
                         <img class=" map-world" src="assets/svg/world2.svg" alt="..." />
@@ -72,7 +73,7 @@
                             <div class="circle" style="animation-delay: 1s"></div>
                             <div class="circle" style="animation-delay: 2s"></div>
                             <div class="circle" style="animation-delay: 3s"></div>
-                            <a href="#" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="#000000" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <a href="argentina.html" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="#000000" class="bi bi-circle-fill" viewBox="0 0 16 16">
                               <circle cx="8" cy="8" r="8"/>
                             </svg></a>
                         </div>
@@ -93,6 +94,7 @@
             </div>
             
           </header>
+          <a href="#myModal" class="btn-play play" data-toggle="modal"><i class="bi bi-play-circle-fill"></i></a>
           <!-- The Modal -->
           <div id="myModal" class="modal">
             <div class="modal-dialog">
@@ -101,9 +103,8 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body video">
-                     <div class="alert-danger text-center">TO BE REPLACED</div> 
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/YfAGicUQeSo" allowfullscreen></iframe>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/eWerS_CdVWk?si=ilvhPJ5sidZPPoZd" allowfullscreen></iframe>
                       </div>
                     </div>
                 </div>
@@ -113,8 +114,27 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="js/popup.js"></script>
+        <script>
+
+$(document).ready(function(){
+  /* Get iframe src attribute value i.e. YouTube video url
+  and store it in a variable */
+  var url = $("#cartoonVideo").attr('src');
+  
+  /* Assign empty url value to the iframe src attribute when
+  modal hide, which stop the video playing */
+  $("#myModal").on('hide.bs.modal', function(){
+      $("#cartoonVideo").attr('src', '');
+  });
+  
+  /* Assign the initially stored url back to the iframe src
+  attribute when modal is displayed again */
+  $("#myModal").on('show.bs.modal', function(){
+      $("#cartoonVideo").attr('src', url);
+  });
+});
+
+        </script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

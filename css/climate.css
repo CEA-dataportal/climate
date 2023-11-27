@@ -1,14 +1,14 @@
 body {
-  font-weight: 300;
+
+  background: rgba(12, 19, 35, 0.85);
 }
 
 
 img.site-logo {
     width: 180px;
-    height: 81px;
     position: fixed;
-    top:20px;
-    left:50px;
+    top:10px;
+    left:10px;
 }
 #mainNav {background: transparent!important;}
 #mainNav.navbar-shrink {
@@ -46,11 +46,11 @@ a {
 }
 
 .masthead {
-padding-top: 50px!important;
+padding-top: 85px!important;
 }
 
 .page1 {
-    background: linear-gradient(to bottom, rgba(63, 58, 58, 0.6) 0%, rgba(63, 58, 58, 1) 85%, rgb(63, 58, 58) 100%), url("../assets/img/buenos-aires.jpg");
+    background: linear-gradient(to bottom, rgba(63, 58, 58, 0.6) 10%, rgba(63, 58, 58, 0.8) 85%, rgb(63, 58, 58, 1) 100%), url("../assets/img/buenos-aires.jpg");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ padding-top: 50px!important;
 
   
 .bangladesh {
-    background: linear-gradient(to left, rgba(63, 58, 58, 0.9) 0%, rgb(63, 58, 58, 1) 85%), url("../assets/img/Satkhira/situation-cyclone-satkira.jpg");
+    background: linear-gradient(to left, rgba(12, 19, 35, 0.8) 0%, rgb(12, 19, 35, 1) 75%), url("../assets/img/Satkhira/situation-cyclone-satkira.jpg");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -67,10 +67,13 @@ padding-top: 50px!important;
     
   }
 
+  @media (max-width: 768px) {
+    
+  }
 
 
 .argentina {
-    background: linear-gradient(to left, rgba(63, 58, 58, 0.9) 0%, rgb(63, 58, 58, 1) 85%), url("../assets/img/buenos-aires.jpg");
+    background: linear-gradient(to left,  rgba(12, 19, 35, 0.7) 0%, rgb(12, 19, 35, 1) 75%),url("../assets/img/ARG_7810.jpg");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -80,21 +83,31 @@ padding-top: 50px!important;
 
 
   .container-country {
-    position:fixed;
+    position:relative;
     z-index: 20;
 }
-@media (max-width: 768px) {
 
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+    line-height: 1.2em;
+  }
 }
 
 @media (min-width: 992px) {
+  body {
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
   .container-country {
     margin-left: 30%;
     width: 70%;
     max-width: 800px;
 }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container-country {
     margin-left: 20vw;
     width: 65%;
@@ -162,12 +175,12 @@ margin-right: auto;
   }
   
 .bottom-line {
-  right:-10px;
+    right:-10px;
     bottom:-2em;
-    max-width: 20%;
-    min-width: 15%;
+    max-width: 25%;
+    min-width: 20%;
     position: fixed;
-    z-index: 1030;
+    z-index: 3;
   }
 .keymessages {
   line-height: 1em;
@@ -202,10 +215,14 @@ margin-right: auto;
   }
   
 .indexheader {
-    height: 25vh;
+  width:  50vw;
+  top: 20%;
+  margin: auto;
+  text-align: center;
   }
+
 .indexmap {
-  height: 25vh;
+  bottom: 0px;
 }
   
 
@@ -218,14 +235,13 @@ margin-right: auto;
 
   .map-world {
     opacity: 0.2;
-    
     max-height: 100%;
   }
 
 
 
  .icon {
-    height: 55px;
+    height: 45px;
     background-color: #ddd;
     padding: 5px;
     border-radius: 50%;
@@ -257,9 +273,89 @@ margin-right: auto;
 
 .map-bangladesh {
     height: 100%;
-    opacity: 0.3;
-    --height: 100%;
+    opacity: 0.2;
+    filter: invert(100%);
+    filter: saturate(30%);
   }
+
+  .map-argentina {
+  height: 100%;
+  opacity: 0.2;
+  filter: invert(100%);
+  filter: saturate(30%);
+  --height: 100%;
+  left:10px
+}
+
+  #circle_container-buenos {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:54%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.26);
+  }
+
+  #circle_container-corrientes {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:85.2%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.272);
+  }
+
+  #circle_container-salta {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:95.2%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.112);
+  }
+  #circle_container-nequen {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:47.8%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.055);
+  }
+  #circle_container-mendoza {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:73.7%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.035);
+  }
+  #circle_container-santafe {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:84.7%;
+    --height: 100vh;
+    left:calc(var(--height) / 0.7356 * 0.22);
+  }
+
 
 #circle_container-tangail {
     width: 45px;
@@ -309,6 +405,10 @@ margin-right: auto;
   }
 
   .play {
+    position: fixed;
+    z-index: 1050;
+    bottom: 50px;
+    left:calc(50% - 50px);
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -386,9 +486,9 @@ margin-right: auto;
     background-color: inherit;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.16);
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.26);
+    border-top: 1px solid #212529;
+    border-left: 1px solid #212529;
     /*border-right: 1px solid #999;
     border-bottom: 1px solid #999;*/
     padding: 1em;
@@ -409,16 +509,17 @@ margin-right: auto;
 }
 
 
-.card .profile {
+.card 
+
+.profile {
     min-width: 100px;
     min-height: 100px;
     max-width: 100px;
     max-height: 100px;
     border-radius: 50%;
-    object-fit: cover;
-    background-color: #fff;
-    top:20px;
-    left:20px;
+    object-fit:cover;
+    object-position: center;
+    background-color:antiquewhite;
 }
 
 .card .name {
@@ -426,16 +527,16 @@ margin-right: auto;
 }
 
 .card .designation {
-    font-size: 1rem;
+    font-size: 1em;
     color: #ddd;
     letter-spacing: 0.8px;
 }
 
 .card .testimonial {
-  font-size: 0.9rem;
     padding-left: 25px;
     padding-top: 10px;
     padding-left: 10px;
+    font-weight: lighter;
 }
 
 .card .fa-quote-left {
@@ -499,7 +600,9 @@ margin-right: auto;
   border: none;
 } 
 .modal .video {
-  border: 1px #FFF solid;
+  border: 10px #FFF solid;
+  border-radius: 5px;
+  filter:drop-shadow(10px 5px 30px #00000069);
 } 
 .modal .popup-tangail {
   padding:20px;
