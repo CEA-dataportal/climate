@@ -183,9 +183,12 @@ margin-right: auto;
     z-index: 3;
   }
 .keymessages {
-  line-height: 1em;
   padding-left: 10px;
-  padding-top: 10px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.number-icons { 
+  opacity: 0.5;
 }
 .icons { 
     bottom:20px;
