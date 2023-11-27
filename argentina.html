@@ -11,48 +11,17 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/climate.css" rel="stylesheet" />
-        <style>
-      
-            #chart {
-          padding: 0;
-          max-width: 650px;
-          margin: 35px auto;
-        }
-          
-        </style>
-    
-        <script>
-          window.Promise ||
-            document.write(
-              '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
-            )
-          window.Promise ||
-            document.write(
-              '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
-            )
-          window.Promise ||
-            document.write(
-              '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
-            )
-        </script>
-    
-        
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        
-    
-        <script>
-          // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
-          // Based on https://gist.github.com/blixt/f17b47c62508be59987b
-          var _seed = 42;
-          Math.random = function() {
-            _seed = _seed * 16807 % 2147483647;
-            return (_seed - 1) / 2147483646;
-          };
-        </script>
+
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -60,22 +29,16 @@
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="index.html">
                 <img class="site-logo" class="navbar-brand" alt="IFRC.org" src="https://www.ifrc.org/themes/custom/ifrc_theme/dist/images/Logo-Horizontal-RGB.svg"></a>
-              
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" id="secondaryNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="secondaryNav">
         <div class="container px-4 px-lg-5">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
+         
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="page1.html">1</a></li>
-                        <li class="nav-item"><a class="nav-link" href="page2.html">2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="page3.html">3</a></li>
-                        <li class="nav-item"><a class="nav-link" href="page4.html">4</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-arrow-left-circle"></i></a></li>
+                       <!--  <li class="nav-item"><a class="nav-link" href="page2.html"><i class="bi bi-bookmark-fill"></i></a></li>-->
                     </ul>
                 </ul>
             </div>
@@ -84,82 +47,324 @@
         <!-- Masthead-->
         <div class="masthead argentina">
 
-            <div class="container px-4 px-lg-5 py-4 container-tangail">
-                <div class="row gx-0 justify-content-left mt-5 mx-auto">
-                    <div class="text-white text-uppercase fw-lighter">Argentina</div>
-                    <h4 class="text-white-50 ">Corrientes, Esperanza, La Plata, Mendoza, Neuquén, Quilmes and Salta</h4>
+        <div class=" px-4 px-lg-5 py-4 container-country">
+            <h1 class="text-white-50 text-uppercase small mb-4">Argentina</h1>
+                <div class="row gx-0 justify-content-left mt-2 mx-auto">
+                    <div class="text-white text-uppercase fw-bold mb-2">Background</div>
+                    
                 </div>    
-            <div class="row gx-0 justify-content-left  mx-auto">
+            <div class="row gx-0 justify-content-left mx-auto">
                 <div class="col-lg-6 order-lg-first">
                     <div class="h-100 project">
                         <div class="d-flex h-100">
-                            <div class="project-text w-100 text-lg-right">
-                                <div class="text-white text-uppercase">Argentina</div>
-                                <h4 class="text-white">Corrientes, Esperanza, La Plata, Mendoza, Neuquén, Quilmes and Salta</h4>
-                                <p class="mb-0 text-white-50">Insert text</p>
-                            </div>            
+                            <div class="project-text w-100 text-lg-right ">
+                                <p class="text-white text-justify  fw-lighter ">Extreme weather events have turned southwest Bangladesh into one of the most climate-vulnerable regions of the Earth. The southwestern coastal Satkhira District of the country is alarmingly exposed to cyclones, and climate change-driven intrusion of sea water which damages land, crops and drinking water, and causes riverbank erosion. The Tangail District is situated in the influence zone of the Brahmaputra-Jamuna river system, which is one of the largest river systems in the world. Extreme heat and flooding are occurring more frequently than in previous years, causing great damage to agriculture and loss of property.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div>
+                    <div class="h-100 px-lg-3 mx-3 text-center">
                         
-                        <h4 class="text-white">Socio-demographic</h4>
+                        <div class="text-white-50 fw-lighter mb-3 fw-bold ">Natural Hazard Exposure</div>
                         
-                        <p class="mb-0 text-white-50">Insert text</p>
+                            <img class="icon" src="assets/svg/IFRC-icons-colour_Floods.svg" alt="..." data-toggle="tooltip" data-placement="bottom" title="River and coastal floods"/>
+                            <img class="icon" src="assets/svg/IFRC-icons-colour_drought.svg" alt="..." data-toggle="tooltip" data-placement="bottom" title="Drought"/>
+                            <img class="icon" src="assets/svg/IFRC-icons-colour_Wildfire.svg" alt="..." data-toggle="tooltip" data-placement="bottom" title="Wildfires"/>
+                            <img class="icon" src="assets/svg/IFRC-icons-colour_Heatwave.svg" alt="..." data-toggle="tooltip" data-placement="bottom" title="Heat waves"/>
                     </div>
                 </div>
                 
             </div>
-            <div class="row d-flex gx-0 justify-content-left  mx-auto  feedback-box">
+            <div class="text-white text-uppercase fw-bold mt-4 mb-4 h4">What communities say</div>
+            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                <!-- Carousel Item start -->
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row d-flex justify-content-left mx-auto">
+                    
                     <div class="col-lg-6">
-                        <p class="mb-0 text-white-50">Insert text</p>
+                        <div class="text-white fs-2 d-inline-flex mb-3"><i class="bi bi-1-circle-fill"></i><h6 class="keymessages">Exacerbation economic crisis</h6>
+                        </div>
+                        <p class="text-white fw-lighter">
+                            Community insights tell us about how humanitarian impacts of the climate crisis are significantly exacerbated by an ensuing economic crisis. People flee a climate crisis, and are then faced with rising prices and lack of resources. 
+                        </p><p class="text-white fw-lighter">  
+                        Recent changes in weather patterns affect farmers and force changes in how they make a living, showing that climate change is a complex problem that affects different people in different ways.
+                        </p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="project-text w-100 my-auto text-lg-right">
-                            <p class="mb-0 text-white-50">Exposure</p>
-                            <img class="icon" src="assets/svg/IFRC-icons-colour_Floods.svg" alt="..." />
-                            <img class="icon" src="assets/svg/IFRC-icons-colour_Cyclone.svg" alt="..." />
+                            <div class="card">
+                            <img src="assets/svg/bangladesh-2.svg" alt="" class="profile" >
+                                <div class="text-center mb-2">
+                                    <div class="text-white pt-3 text-uppercase name">Guillermo</div>
+                                    <div class="text-white-50 designation">53 years-old, Corientes</div>
+
+                                </div>
+                                <div class="face">
+                                        <span class="fas fa-quote-left"></span>
+                                        <div class="testimonial px-5">
+                                            (...) If you don't prepare, you don't prepare. But there are people who do (...) I thought it wasn't going to happen to me, until it did (...)
+                                        </div>
+                                        <span class="fas fa-quote-right"></span>
+                                </div>
+                               
                         </div>
                         
                     </div> 
-            </div>
-        </div>
-        <div class="icons">
-            <img class="icon" src="assets/svg/IFRC-icons-colour_Floods.svg" alt="..." />
-            <img class="icon" src="assets/svg/IFRC-icons-colour_Cyclone.svg" alt="..." />
-        </div>
-        <div class="map">
-            <img class=" map-bangladesh" src="assets/svg/Argentina_map.svg" alt="..." />
-             <div id="circle_container-tangail">
-                <div class="item text-white-50 mb-5">Tangail</div>
-                <div class="circle" style="animation-delay: 0s"></div>
-                <div class="circle" style="animation-delay: 1s"></div>
-                <div class="circle" style="animation-delay: 2s"></div>
-            </div>
-            <div id="circle_container-satkhira">
-                <div class="item text-white-50 mb-5">Satkira</div>
-                <div class="circle" style="animation-delay: 0s"></div>
-                <div class="circle" style="animation-delay: 1s"></div>
-                <div class="circle" style="animation-delay: 2s"></div>
-            </div>
-          
-        </div>
-       
-                
+                    </div>
+                </div>
+                <!-- Carousel Item end -->
+                <!-- Carousel Item start -->
+                <div class="carousel-item inactive" data-bs-interval="10000">
+                    <div class="row d-flex justify-content-left mx-0">
+                        <div class="col-lg-6">
+                            <div class="text-white fs-2 d-inline-flex mb-3"><i class="bi bi-2-circle-fill"></i><h6 class="keymessages">Precarious situation</h6>
+                            </div>
+                            <p class="text-white fw-lighter">
+                                To minimize the financial impact of the recurring loss of their homes, some people must make the hard choice of living in even more precarious situations.
+                            </p><p class="text-white fw-lighter">
+                                Communities employ various strategies, relying on traditional coping measures, which are very limited. Coping strategies are consistent across age groups, underlining the crucial role of community support for collective efforts in facing disasters and access to resources for effective adaptation.                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="card">
+                                    <img src="assets/svg/bangladesh-8.svg" alt="" class="profile">
+                                    <div class="w-100 text-center mb-2">
+                                        <div class="text-white pt-3 text-uppercase name">Community</div>
+                                        <div class="text-white-50 designation">Focus group discussion, Satkhira</div>
+    
+                                    </div>
+                                    <div class="face">
+                                            <span class="fas fa-quote-left"></span>
+                                            <div class="testimonial px-5">
+                                                I used to have four concrete houses, but due to riverbank erosion I have lost them all. Every few years I have to move my house to a new place. That's why now I only have a small shed made out of hay and straw, which is easier to move and much less expensive to build. Usually, here people keep dismantling their houses and shifting to a safe distance and rebuilding it, it’s the only way we deal with river erosion                                            </div>
+                                            <span class="fas fa-quote-right"></span>
+                                    </div>
+                                   
+                            </div>
+                            
+                        </div> 
+
+                  </div>
+                  
+                </div>
+                 <!-- Carousel Item end -->
+                 <!-- Carousel Item start -->
+                <div class="carousel-item inactive" data-bs-interval="10000">
+                    <div class="row d-flex justify-content-left mx-auto">
+                        <div class="col-lg-6">
+                            <div class="text-white fs-2 d-inline-flex  mb-3"><i class="bi bi-3-circle-fill"></i><h6 class="keymessages">Youth and Elderly People</h6>
+                            </div>
+                            <p class="text-white fw-lighter">
+                                The burden of the climate crisis largely relies on those middle-aged from the working class, who must provide for the young and the elderly.                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="card">
+                                    <img src="assets/svg/bangladesh-7.svg" alt="" class="profile">
+                                    <div class="w-100 text-center mb-2">
+                                        <div class="text-white pt-3 text-uppercase name">Women group</div>
+                                        <div class="text-white-50 designation">Focus Group Discussion, Satkhira</div>
+    
+                                    </div>
+                                    <div class="face">
+                                            <span class="fas fa-quote-left"></span>
+                                            <div class="testimonial px-5">
+                                                The young and old cannot fully comprehend the effects of climate change, and so they are less able to adhere to community coping mechanisms. They are reliant on the middle-age working class for how to combat this which in turns elevates their already pressurised conditions.                                            </div>
+                                            <span class="fas fa-quote-right"></span>
+                                    </div>
+                                   
+                            </div>
+                            
+                        </div> 
+
+                  </div>
+                  
+                </div>
+                 <!-- Carousel Item end -->
+                 <!-- Carousel Item start -->
+                <div class="carousel-item inactive" data-bs-interval="10000">
+                    <div class="row d-flex justify-content-left mx-auto">
+                        <div class="col-lg-6">
+                            <div class="text-white fs-2 d-inline-flex  mb-3"><i class="bi bi-4-circle-fill"></i><h6 class="keymessages">More complex, More vulnerable</h6>
+                            </div>
+                            <p class="text-white fw-lighter">
+                                The climate crisis in coastal areas is driving migration to urban areas, where extreme heath and significant economic challenges create a parallel crisis, making many communities more vulnerable in the long-term. Factors like age, location, and income influence the level of concern, with lower-income individuals expressing more concern due to financial limitations. 
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="card">
+                                    <img src="assets/svg/picture9-portrait.svg" alt="" class="profile">
+                                    <div class="w-100 text-center mb-2">
+                                        <div class="text-white pt-3 text-uppercase name">Kareem</div>
+                                        <div class="text-white-50 designation">60 years old, Satkhira Sadar</div>
+    
+                                    </div>
+                                    <div class="face">
+                                            <span class="fas fa-quote-left"></span>
+                                            <div class="testimonial px-5">
+                                                Since cyclones are the single most destructive disaster for this area, the coastal and most vulnerable people often migrate to the city.  But now heat has been rising significantly--for those who live in concrete buildings in the city it is already unbearable, I can’t imagine how hard it must be for low-income people who live in tin shed houses. The lack of resources in our city, which in turns causes the price of goods to rise continuously, is the biggest threat for Shatkhira to support the most affected communities. 
+                                            </div>
+                                            <span class="fas fa-quote-right"></span>
+                                    </div>
+                                   
+                            </div>
+                            
+                        </div> 
+
+                  </div>
+                  
+                </div>
+                 <!-- Carousel Item end -->
+<!-- Carousel Item start -->
+                <div class="carousel-item inactive" data-bs-interval="10000">
+                    <div class="row d-flex justify-content-left mx-auto">
+                        <div class="col-lg-6">
+                            <div class="text-white fs-2 d-inline-flex  mb-3"><i class="bi bi-5-circle-fill"></i><h6 class="keymessages">Climate change information in the community</h6>
+                            </div>
+                            <p class="text-white fw-lighter">
+                                Community trust in climate information is diverse, ranging from reliance on expert knowledge and early warning systems to verification from peers within the community.
+                            </p><p class="text-white fw-lighter">
+                                Although trust in local organizations addressing climate change is there, challenges persist about transparency in aid delivery from some NGOs. Internet access and information from community members contribute to overall trust in climate-related information.                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="card">
+                                    <img src="assets/svg/Picture1-portrait.svg" alt="" class="profile">
+                                    <div class="w-100 text-center mb-2">
+                                        <div class="text-white pt-3 text-uppercase name">Ashraf</div>
+                                        <div class="text-white-50 designation">40 years old, Restaurant manager, Tangail</div>
+    
+                                    </div>
+                                    <div class="face">
+                                            <span class="fas fa-quote-left"></span>
+                                            <div class="testimonial px-5">
+                                                Sometimes, we get the wrong information or the outcome of the predictions might not always be correct, but we still seek information  the next time because we care about our lives and families.                                            </div>
+                                            <span class="fas fa-quote-right"></span>
+                                    </div>
+                                   
+                            </div>
+                            
+                        </div> 
+
+                  </div>
+                  
+                </div>
+                 <!-- Carousel Item end -->
+
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+
             
+        </div>
+        
+        <div class="map">
+            <img class=" map-argentina" src="assets/svg/Argentina_map.svg" alt="..." />
+             <div id="circle_container-buenos">
+                <div class="item text-white-50 mb-5 text-center">Buenos Aires</div>
+                <div class="circle" style="animation-delay: 0s"></div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 2s"></div>
+                <a href="#myModal_tangail" id="myBtn_tangail" data-toggle="modal" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d50909" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                              <circle cx="8" cy="8" r="8"/>
+                            </svg></a>
+            </div>
+            <div id="circle_container-corrientes">
+                <div class="item text-white-50 mb-5 text-center">Corrientes</div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 2s"></div>
+                <div class="circle" style="animation-delay: 3s"></div>
+                <a href="#myModal_tangail" id="myBtn_tangail" data-toggle="modal" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d50909" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                              <circle cx="8" cy="8" r="8"/>
+                            </svg></a>
+            </div>
+            <div id="circle_container-salta">
+                <div class="item text-white-50 mb-5 text-center">Salta</div>
+                <div class="circle" style="animation-delay: 0s"></div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 2s"></div>
+                <a href="#myModal_tangail" id="myBtn_tangail" data-toggle="modal" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d50909" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                              <circle cx="8" cy="8" r="8"/>
+                            </svg></a>
+            </div>
+            <div id="circle_container-nequen">
+                <div class="item text-white-50 mb-5 text-center">Nequèn</div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 2s"></div>
+                <div class="circle" style="animation-delay: 3s"></div>
+                <a href="#myModal_tangail" id="myBtn_tangail" data-toggle="modal" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d50909" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                              <circle cx="8" cy="8" r="8"/>
+                            </svg></a>
+            </div>
+    
+            <div id="circle_container-mendoza">
+                <div class="item text-white-50 mb-5 text-center">Mendoza</div>
+                <div class="circle" style="animation-delay: 0s"></div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 2s"></div>
+                <a href="#myModal_tangail" id="myBtn_tangail" data-toggle="modal" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d50909" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                              <circle cx="8" cy="8" r="8"/>
+                            </svg></a>
+            </div>
+            <div id="circle_container-santafe">
+                <div class="item text-white-50 mb-5 text-center">Esperenza</div>
+                <div class="circle" style="animation-delay: 0s"></div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 2s"></div>
+                <a href="#myModal_tangail" id="myBtn_tangail" data-toggle="modal" class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d50909" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                              <circle cx="8" cy="8" r="8"/>
+                            </svg></a>
+            </div>
+
+            <div id="myModal_tangail" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content popup-tangail">
+                    <span class="btn-close">&times;</span>
+                    <h4 class="mb-4">Tangail Sadar</h4>
+                    <p class="text">insert text on Tangail</p> 
+                    <p class="text">
+                        <img class="icon" src="assets/svg/IFRC-icons-colour_Floods.svg" alt="..." />
+                    </p>                 
+                </div>
+            </div>
+          </div>
+          
+          
+
+
+          
+
+         
+            <div id="myModal_satkhira" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content popup-satkhira">
+                        <span class="btn-close">&times;</span>
+                        <h4 class="mb-4">Satkhira Sadar</h4>
+                        <p class="text">insert text on Tangail</p> 
+                        <p class="text">
+                        <img class="icon" src="assets/svg/IFRC-icons-colour_Cyclone.svg" alt="..." />
+                        </p>                 
+                    </div>
+                </div>
+              </div>
+        </div>
+        
+                
+        
        
         </div>
+        <img class="img-fluid bottom-line" src="assets/svg/picture11.svg" alt="..." />
         <!-- Footer-->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/charts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/popup.js"></script>
     </body>
 </html>
