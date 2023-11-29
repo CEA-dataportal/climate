@@ -52,6 +52,12 @@ img.site-logo {
 a {
  text-decoration: none;
 }
+.btn {
+  font-size: 0.8em;
+  padding: 1em 1em;
+  line-height:1em!important;
+
+}
 
 .copyright {
   font-family: "Open Sans", "Tajawal", "Arial", sans-serif;
