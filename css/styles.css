@@ -5915,7 +5915,6 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   min-height: 400px;
-  max-height: 500px;
   width: 100%;
   overflow: hidden;
 }
