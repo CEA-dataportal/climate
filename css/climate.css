@@ -289,11 +289,12 @@ margin-right: auto;
   }
 
   .map-argentina {
-  height: 100%;
+    position: relative;
   opacity: 0.2;
   filter: saturate(10%);
-  --height: 100%;
-  left:-20px
+  left:-30px;
+  width:350px;
+  padding-top:120px;
 }
 
   #circle_container-buenos {
@@ -302,10 +303,9 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom:54%;
-    --height: 100vh;
-    left: calc(100% * 0.5934);
+    position: absolute;
+    top:356px;
+    left: 210px;
   }
 
   #circle_container-corrientes {
@@ -314,9 +314,9 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom:84.1%;
-    left: calc(100% * 0.64);
+    position: absolute;
+    top:200px;
+    left: 210px;
   }
 
   #circle_container-salta {
@@ -325,21 +325,19 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom:95.2%;
-    --height: 100vh;
-    left:calc(var(--height) / 0.7356 * 0.112);
+    position: absolute;
+    top:159px;
+    left: 93px;
   }
-  #circle_container-nequen {
+  #circle_container-neuquen {
     width: 45px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom:47.8%;
-    --height: 100vh;
-    left:calc(var(--height) / 0.7356 * 0.055);
+    position: absolute;
+    top:446px;
+    left: 37px;
   }
   #circle_container-mendoza {
     width: 45px;
@@ -347,10 +345,9 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom:73.7%;
-    --height: 100vh;
-    left:calc(var(--height) / 0.7356 * 0.035);
+    position: absolute;
+    top:326px;
+    left: 35px;
   }
   #circle_container-santafe {
     width: 45px;
@@ -358,10 +355,9 @@ margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom:84.7%;
-    --height: 100vh;
-    left:calc(var(--height) / 0.7356 * 0.22);
+    position: absolute;
+    top:290px;
+    left: 167px;
   }
 
 
@@ -429,13 +425,17 @@ margin-right: auto;
     padding-left:5px;
     animation: bounce 2s infinite linear;
   }
-
+  .btn-play a{
+    opacity: 1;
+    color:#FFF!important;
+  }
   
-  .play a:hover{
-    color:#FFF;
+ a:hover{
+    opacity: 1;
+    color:#FFF!important;
   }
 
-  .btn-play {
+  .btn-play  {
     font-size: 3rem;
   }
 
@@ -571,7 +571,7 @@ margin-right: auto;
   margin: 20px;
 }
 .modal-dialog iframe{
-    margin: auto;
+ margin: auto;
     
   display: block;
 }
@@ -583,10 +583,9 @@ margin-right: auto;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   left: 0;
-  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background: transparent;
+  background: #00000069;
   border: none;
   vertical-align: middle;
   padding: 0px;
@@ -598,10 +597,6 @@ margin-right: auto;
 
 /* Modal Content/Box */
 .modal-content {
-  width: 60vw;
-  max-width: 850px;
-  background:transparent;
-  color: #212529;
   margin: auto; /* 15% from the top and centered */
 }
 .modal-header {
@@ -615,29 +610,17 @@ margin-right: auto;
 .modal .popup-tangail {
   padding:20px;
   position: fixed;
-  top:32%;
-  left:8%;
+  top:15%;  
+  width: 500px;
+  --widthpopup: calc(400px / 2);
+  left:calc(50% - var(--widthpopup));
   overflow:hidden !important;
   overflow-y:auto;
-  width: 400px;
-  max-height: 50vh !important; /* Could be more or less, depending on screen size */
+  max-height: 80% !important; /* Could be more or less, depending on screen size */
   background-color: #fefefe;
   color: #212529;
 }
 
-
-.modal .popup-satkhira {
-  padding:20px;
-  position: fixed;
-  top:60%;
-  left:2%;
-  overflow:hidden !important;
-  overflow-y:auto;
-  width: 400px;
-  max-height: 50vh !important; /* Could be more or less, depending on screen size */
-  background-color: #fefefe;
-  color: #212529;
-}
 .close {margin-top:-30px;margin-right:-30px;font-weight: 700;float: right; padding: 5px; width: 45px; text-align: center; color:#FFF!important;} 
 .close:hover{color:#CCC!important;} 
 
