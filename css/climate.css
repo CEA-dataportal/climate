@@ -1,7 +1,10 @@
 body {
-
-  background: rgba(12, 19, 35, 0.85);
+  background:#12284c !important;
+  font-weight: 200!important;
+  
+  -webkit-font-smoothing: antialiased;
 }
+
 
 
 img.site-logo {
@@ -50,25 +53,38 @@ a {
  text-decoration: none;
 }
 
+.copyright {
+  font-family: "Open Sans", "Tajawal", "Arial", sans-serif;
+  font-size: 0.8333rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #12284c;
+  text-align: center;
+}
+
+.ifrc-footer {
+  background: transparent;
+  color: #CCC;
+}
+
 .masthead {
 padding-top: 85px!important;
 }
 
-.page1 {
-    background: linear-gradient(to bottom, rgba(63, 58, 58, 0.6) 10%, rgba(63, 58, 58, 0.8) 85%, rgb(63, 58, 58, 1) 100%), url("../assets/img/buenos-aires.jpg");
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-attachment:scroll;    
-  }
+
 
   
 .bangladesh {
-    background: linear-gradient(to left, rgba(12, 19, 35, 0.8) 0%, rgb(12, 19, 35, 1) 75%), url("../assets/img/Satkhira/situation-cyclone-satkira.jpg");
+    /* background: linear-gradient(to left, rgba(12, 19, 35, 0.8) 0%, rgb(12, 19, 35, 1) 75%), url("../assets/img/Satkhira/situation-cyclone-satkira.jpg"); */
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     background-attachment:fixed;
+    height: fit-content;
     
   }
 
@@ -78,7 +94,8 @@ padding-top: 85px!important;
 
 
 .argentina {
-    background: linear-gradient(to left,  rgba(12, 19, 35, 0.7) 0%, rgb(12, 19, 35, 1) 75%),url("../assets/img/ARG_7810.jpg");
+    /* background: linear-gradient(to left,  rgba(12, 19, 35, 0.7) 0%, rgb(12, 19, 35, 1) 75%),url("../assets/img/ARG_7810.jpg"); */
+    height: fit-content;
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -489,10 +506,10 @@ margin-right: auto;
 
 
 .card {
-    min-width: 250px;
-    min-height: 200px;
-    max-width: 450px;
-    max-height: 350px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
     /*transform-style: preserve-3d;*/
     perspective: 500px;
     border: none;
@@ -504,16 +521,20 @@ margin-right: auto;
     border-left: 1px solid #212529;
     /*border-right: 1px solid #999;
     border-bottom: 1px solid #999;*/
-    padding: 1em;
+    
+    padding: 1.1em 0;
     transform-style: preserve-3d;
     align-items: center;
 }
 
 .card .face {
+    margin-top:10px ;
     /*position: absolute;*/
     color: #fff;
-    width: 100%;
+    width: 95%;
     height: 100%;
+    
+    object-position: center;
     overflow: hidden;
     transform-style: preserve-3d;
     /*transition: 0.5s;
@@ -522,19 +543,42 @@ margin-right: auto;
 }
 
 
-.card 
-
-.profile {
-    min-width: 100px;
+.card .profile {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  border-bottom-left-radius: 15px;
+    min-width: 70px;
     min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
+    max-width: 150%;
+    max-height: 145px;
     object-fit:cover;
     object-position: center;
-    background-color:antiquewhite;
 }
 
+.card .profile-right {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  border-bottom-right-radius: 15px;
+    min-width: 100px;
+    min-height: 100px;
+    max-height: 145px;
+    object-fit:cover;
+    object-position: center;
+}
+
+
+.card .block-name {
+  padding: 10px;
+  margin-left: 45% ;
+  width: 50%;
+}
+.card .block-name-right {
+  padding: 10px;
+  margin-right: 45% ;
+  width: 50%;
+}
 .card .name {
     letter-spacing: 2px;
 }
@@ -549,21 +593,24 @@ margin-right: auto;
     padding-left: 25px;
     padding-top: 10px;
     padding-left: 10px;
-    font-weight: lighter;
+    font-style: italic;
+    vertical-align: middle;
 }
 
 .card .fa-quote-left {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    font-size:  0.9rem;
+    top: -5px;
+    left: 0px;
+    font-size:  2rem;    
+    opacity: 0.3;
 }
 
 .card .fa-quote-right {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 1.2rem;
+    position: relative;
+    bottom: 0px;
+    left:90%;
+    font-size:2rem;
+    opacity: 0.3;
 }
 
 
@@ -576,8 +623,7 @@ margin-right: auto;
   margin: 20px;
 }
 .modal-dialog iframe{
- margin: auto;
-    
+  margin: auto;
   display: block;
 }
 /* The Modal (background) */
